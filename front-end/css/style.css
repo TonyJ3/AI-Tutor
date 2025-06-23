@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .background {
+    /* background: url('https://weredi.nl/wp-content/uploads/2024/09/Brugperiodegebouw-1140-765.png') no-repeat center center/cover; */
+    background: url('https://content.presspage.com/uploads/1191/1920_r10-212013.jpg?10000') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+  }
+  
+  .top-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-left img,
+  .logo-right img {
+    height: 120px;
+    object-fit: contain;
+    margin-left: 80px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  .login-button{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-button button {
+    width: 100%; 
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ccc; 
+    color: black;           
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .logout-button img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.2s ease;
+  }
+  
+  .logout-button:hover img {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+
+

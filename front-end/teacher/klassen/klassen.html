@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Students progress</title>
+    <link rel="stylesheet" href="/front-end/css/klassen.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="/front-end/images/fontys-logo.png" alt="Aristotelis AI" class="nav-logo">
+      </div>
+      <div class="nav-center">
+        <h1>Engels Vak</h1>
+      </div>
+      <div class="nav-right">
+        <a href="/front-end/teacher/leraar/leraar.html" class="logout-icon" title="Log uit">
+          <img src="/front-end/images/back.png" alt="Log uit" class="logout-icon-img">
+        </a>
+      </div>
+    </nav>
+      </div>
+      <div class="legend">
+        <div class="legend-item">
+        <div class="status-punt1 makkelijk1"></div>
+        <span>Makkelijk</span> 
+    </div>
+    <div class="legend-item">
+        <div class="status-punt1 gemiddeld1"></div>
+        <span>Gemiddeld</span>
+    </div>
+    <div class="legend-item">
+        <div class="status-punt1 moeilijk1"></div>
+        <span>Moeilijk</span>
+    </div>
+    <div class="legend-item">
+        <div class="status-punt1 zeer-moeilijk1"></div>
+        <span>Zeer Moeilijk</span>
+    </div>
+    </div>
+    
+    <div class="dashboard">
+      <div class="filters">
+    <div class="filter-group">
+        <label for="studentFilter">Leerling:</label>
+        <select id="studentFilter">
+            <option value="all">Alle Leerlingen</option>
+            <option value="Henry Doe">Henry Doe</option>
+            <option value="Sally phan">Sally phan</option>
+            <option value="Chloe">Chloe</option>
+            <option value="David">David</option>
+        </select>
+    </div>
+    
+    <div class="filter-group">
+        <label for="skillFilter">Vaardigheid:</label>
+        <select id="skillFilter">
+            <option value="all">Alle Vaardigheden</option>
+            <option value="grammar">Grammatica</option>
+            <option value="vocabulary">Woordenschat</option>
+            <option value="reading">Leesvaardigheid</option>
+        </select>
+    </div>
+     <div class="filter-group">
+        <label for="classFilter">Klassen</label> 
+        <select id="classFilter">
+            <option value="all">Alle Klassen</option> 
+            <option value="HAVO1">HAVO1</option> 
+            <option value="HAVO2">HAVO2</option>  
+        </select>
+    </div>
+</div>
+        <table>
+            <thead>
+                <tr>
+                     <th rowspan="2">Leerling</th>
+                    <th rowspan="2" id="promptHeader" style="cursor: pointer;">
+                      prompt
+                      <span id="sortIcon">▼</span>
+                    </th>
+                     <th rowspan="2" id="classHeader" style="cursor: pointer;">
+                        Klassen
+                    </th>
+                     <th colspan="3">Grammatica</th>
+                     <th colspan="3">Woordenschat</th>
+                     <th colspan="3">Leesvaardigheid</th>
+                </tr>
+               <tr>
+              <th style="cursor: pointer;" onclick="sortTable(3)">Opdracht 1 <span class="sort-icon" data-column="3">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(4)">Opdracht 2 <span class="sort-icon" data-column="4">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(5)">Opdracht 3 <span class="sort-icon" data-column="5">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(6)">Opdracht 1 <span class="sort-icon" data-column="6">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(7)">Opdracht 2 <span class="sort-icon" data-column="7">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(8)">Opdracht 3 <span class="sort-icon" data-column="8">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(9)">Opdracht 1 <span class="sort-icon" data-column="9">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(10)">Opdracht 2 <span class="sort-icon" data-column="10">▼</span></th>
+            <th style="cursor: pointer;" onclick="sortTable(11)">Opdracht 3 <span class="sort-icon" data-column="11">▼</span></th>
+        </tr>
+            </tr>
+            </thead>
+            <tbody>
+                <tr data-class="HAVO1">
+                    <td>Alice</td>
+                    <td>HAVO1</td>
+                    <td><div class="status-dot medium" data-student="alice" data-skill="grammar" data-task="1"> <span class="percentage-label">60%</span></div></td></div></td>
+                    <td><div class="status-dot medium" data-student="alice" data-skill="grammar" data-task="2"> <span class="percentage-label">60%</span></div></td></div></td>
+                    <td><div class="status-dot hard" data-student="alice" data-skill="grammar" data-task="3"> <span class="percentage-label">40%</span></div></td></div></td>
+                    <td><div class="status-dot very-hard" data-student="alice" data-skill="vocabulary" data-task="1"> <span class="percentage-label">0%</span></div></td></div></td>
+                    <td><div class="status-dot easy" data-student="alice" data-skill="vocabulary" data-task="2"> <span class="percentage-label">80%</span></div></td></div></td>
+                    <td><div class="status-dot medium" data-student="alice" data-skill="vocabulary" data-task="3"> <span class="percentage-label">60%</span></div></td></div></td>
+                    <td><div class="status-dot hard" data-student="alice" data-skill="reading" data-task="1"> <span class="percentage-label">40%</span></div></td></div></td>
+                    <td><div class="status-dot hard " data-student="alice" data-skill="reading" data-task="2"> <span class="percentage-label">40%</span></div></td></div></td>
+                    <td><div class="status-dot very-hard" data-student="alice" data-skill="reading" data-task="3"> <span class="percentage-label">20%</span></div></td></div></td>
+                </tr>
+                <tr data-class="HAVO1">
+                    <td>Brian</td>
+                    <td>HAVO1</td>
+                    <td><div class="status-dot hard" data-student="brian" data-skill="grammar" data-task="1"> <span class="percentage-label">40%</span></div></td></div></td>
+                    <td><div class="status-dot hard" data-student="brian" data-skill="grammar" data-task="2"> <span class="percentage-label">40%</span></div></td></div></td>
+                    <td><div class="status-dot very-hard" data-student="brian" data-skill="grammar" data-task="3"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot very-hard" data-student="brian" data-skill="vocabulary" data-task="1"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot very-hard " data-student="brian" data-skill="vocabulary" data-task="2"><span class="percentage-label">0%</span></div></td>
+                    <td><div class="status-dot medium" data-student="brian" data-skill="vocabulary" data-task="3"><span class="percentage-label">60%</span></div></td>
+                    <td><div class="status-dot hard" data-student="brian" data-skill="reading" data-task="1"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot very-hard" data-student="brian" data-skill="reading" data-task="2"><span class="percentage-label">0%</span></div></td>
+                    <td><div class="status-dot easy" data-student="brian" data-skill="reading" data-task="3"><span class="percentage-label">80%</span></div></td>
+                </tr>
+                <tr data-class="HAVO2">
+                    <td>Chloe</td>
+                    <td>3</td>
+                    <td>HAVO2</td>
+                    <td><div class="status-dot hard" data-student="chloe" data-skill="grammar" data-task="1"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot easy" data-student="chloe" data-skill="grammar" data-task="2"><span class="percentage-label">80%</span></div></td>
+                    <td><div class="status-dot medium " data-student="chloe" data-skill="grammar" data-task="3"><span class="percentage-label">60%</span></div></td>
+                    <td><div class="status-dot very-hard" data-student="chloe" data-skill="vocabulary" data-task="1"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot hard " data-student="chloe" data-skill="vocabulary" data-task="2"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot hard" data-student="chloe" data-skill="vocabulary" data-task="3"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot hard " data-student="chloe" data-skill="reading" data-task="1"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot very-hard " data-student="chloe" data-skill="reading" data-task="2"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot easy" data-student="chloe" data-skill="reading" data-task="3"><span class="percentage-label">80%</span></div></td>
+                </tr>
+                <tr data-class="HAVO2">
+                    <td>David</td>
+                    <td>5</td>
+                    <td>HAVO2</td>
+                    <td><div class="status-dot easy" data-student="david" data-skill="grammar" data-task="1"><span class="percentage-label">80%</span></div></td>
+                    <td><div class="status-dot medium" data-student="david" data-skill="grammar" data-task="2"><span class="percentage-label">60%</span></div></td>
+                    <td><div class="status-dot hard " data-student="david" data-skill="grammar" data-task="3"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot hard " data-student="david" data-skill="vocabulary" data-task="1"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot hard" data-student="david" data-skill="vocabulary" data-task="2"><span class="percentage-label">40%</span></div></td>
+                    <td><div class="status-dot very-hard" data-student="david" data-skill="vocabulary" data-task="3"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot very-hard" data-student="david" data-skill="reading" data-task="1"><span class="percentage-label">20%</span></div></td>
+                    <td><div class="status-dot easy" data-student="david" data-skill="reading" data-task="2"><span class="percentage-label">80%</span></div></td>
+                    <td><div class="status-dot hard" data-student="david" data-skill="reading" data-task="3"><span class="percentage-label">40%</span></div></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="detail-panel" id="detailPanel">
+        <button class="close-btn" id="closeDetail">&times;</button>
+        <h2  id="detailTitle" style="display: none;">Assignment Details</h2>
+        <h2  id="detailTopic">Assignment Details</h2>
+        <div id="detailContent">
+           <p><strong>Student:</strong> <span id="studentName"></span></p>
+           <p><strong>Vaardigheid:</strong> <span id="skillName"></span></p>
+           <p><strong>Taak:</strong> <span id="taskNumber"></span></p>
+           <p>
+          <strong>Status:</strong>
+          <span class="status-punt zeer-moeilijk"></span>
+          <span id="taskStatus" class="text-makkelijk">Makkelijk</span>
+        </p>
+            
+            <div class="progress-container">
+                <p><strong>Prestatie:</strong> <span id="performancePercent"></span></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            
+            <div class="question-results">
+               <h3>Vraagresultaten:</h3>
+                <div id="questionList"></div>
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+
+    <script>
+      function toggleDetails(row) {
+        const next = row.nextElementSibling;
+        if (next && next.classList.contains('student-details')) {
+          next.style.display = next.style.display === 'none' ? 'block' : 'none';
+        }
+      }
+    </script>
+    <script src="/front-end//js/script.js"></script>
+  </body>
+</html>

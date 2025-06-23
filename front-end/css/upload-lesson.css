@@ -1,0 +1,98 @@
+.container {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container h1, h2, h3 {
+    text-align: center;
+}
+
+/* File list */
+#fileList {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+#fileList.loading {
+    font-style: italic;
+    color: #888;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* File input */
+input[type="file"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #7d5ba6;
+}
+
+/* Upload button */
+button[type="submit"] {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(80, 55, 108);
+}
+
+/* Upload result */
+#result {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* File List Styling */
+#fileList ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.file-entry {
+    background-color: #f0f0ff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/*.file-entry:hover {
+    background-color: #e4d5fa;
+    transform: translateY(-2px);
+    cursor: pointer;
+}*/

@@ -1,0 +1,399 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.header {
+  background-color: #c4a1dd;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+
+.logo {
+  height: 40px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 10%;
+}
+
+.aristotle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.text-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.center-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aristotle-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.greeting {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-logo {
+  height: 70px;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.logout-button img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.logout-button:hover img {
+  transform: scale(1.1);
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tool-card {
+  background: white;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.358);
+  border-left: 6px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.icon-wrapper {
+  background-color: #b39ddb;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+}
+
+.tool-card.purple .icon-wrapper {
+  background-color: #b39ddb;
+
+}
+
+.tool-card.yellow .icon-wrapper {
+  background-color: yellowgreen;
+
+}
+
+.tool-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-card-link:hover .tool-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.aristotle-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6a1b9a;
+  /* Purple border matching cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  font-weight: 600;
+}
+
+.aristotle-section {
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tool-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tool-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid;
+}
+
+.tool-card.purple {
+  border-color: #6a1b9a;
+}
+
+.tool-card.blue {
+  border-color: #2196F3;
+}
+
+.tool-card.green {
+  border-color: #4CAF50;
+}
+
+.tool-card.orange {
+  border-color: #FF9800;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: rgba(106, 27, 154, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tool-card.blue .icon-wrapper {
+  background: rgba(33, 150, 243, 0.1);
+}
+
+.tool-card.green .icon-wrapper {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.tool-card.orange .icon-wrapper {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+.icon-img {
+  width: 40px;
+  height: 40px;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.card-hover {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  background: rgba(106, 27, 154, 0.9);
+  color: white;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover .card-hover {
+  bottom: 0;
+}
+
+.tool-card.blue .card-hover {
+  background: rgba(33, 150, 243, 0.9);
+}
+
+.tool-card.green .card-hover {
+  background: rgba(76, 175, 80, 0.9);
+}
+
+.tool-card.orange .card-hover {
+  background: rgba(255, 152, 0, 0.9);
+}
+
+@media (max-width: 1024px) {
+  .aristotle-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .aristotle-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-content button:hover {
+  background-color: #58127e;
+}
+
+
+.single-card .aristotle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 60vh;
+}
+
+.single-card .tool-card {
+  width: 350px;        
+  padding: 80px 40px;   
+  font-size: 1.1rem;    
+}
+
+.single-card .icon-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.single-card .icon-img {
+  width: 48px;
+  height: 48px;
+}

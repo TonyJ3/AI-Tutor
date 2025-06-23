@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/front-end/css/style-dashboard-student.css">
+    <link rel="stylesheet" href="/front-end/css/terms.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="/front-end/images/fontys-logo.png" alt="Aristoteles AI" class="nav-logo">
+      <h1>Aristotle AI</h1>
+    </header>
+    <a href="/front-end/student/subject/subject.html" class="logout-button" title="Log uit">
+      <img src="/front-end/images/back.png" alt="Log uit">
+    </a>
+
+    <!-- Modaal voor gebruikersvoorwaarden -->
+    <div id="termsModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Gebruiksvoorwaarden</h2>
+        <p>Door gebruik te maken van Aristotle AI ga je akkoord met onze
+          <a href="/front-end/terms/terms.html">gebruikersvoorwaarden</a>.
+        </p>
+        <button id="acceptTerms">Akkoord</button>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="aristotle-section">
+
+        <a href="/front-end/student/ai-tutor-choose/ai-tut-choose.html" class="tool-card-link">
+          <div class="tool-card blue">
+            <div class="icon-wrapper">
+              <img src="/front-end/images/homework.png" alt="Huiswerk" class="icon-img">
+            </div>
+            <h2>Studiehulp</h2>
+            <p class="card-description">Theorie & Oefeningen</p>
+            <div class="card-hover">
+              <span>Aan de slag →</span>
+            </div>
+          </div>
+        </a>
+
+   
+        <a href="/front-end/student/student-upload/student-upload.html" class="tool-card-link">
+          <div class="tool-card green">
+            <div class="icon-wrapper">
+              <img src="/front-end/images/homework.png" alt="Huiswerk" class="icon-img">
+            </div>
+            <h2>Huiswerk controle</h2>
+            <p class="card-description">Upload je husiwerk</p>
+            <div class="card-hover">
+              <span>Aan de slag →</span>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="/front-end/student/student-progress/student-progress.html" class="tool-card-link">
+          <div class="tool-card orange">
+            <div class="icon-wrapper">
+              <img src="/front-end/images/progress.png" alt="Voortgang" class="icon-img">
+            </div>
+            <h2 href="">Mijn Voortgang</h2>
+            <p class="card-description">Bekijk je resultaten</p>
+            <div class="card-hover">
+              <span>Bekijken →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+    
+    <!-- Footer met Terms of Use link -->
+    <footer class="footer">
+      <p>&copy; 2025 Aristotle AI. Alle rechten voorbehouden. |
+        <a href="/front-end/terms/terms.html">Gebruiksvoorwaarden</a>
+      </p>
+    </footer>
+
+    <script src="/front-end/js/script.js"></script>
+    <script src="terms.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aristotle AI Chat</title>
+    <link rel="stylesheet" href="/front-end/css/chat.css">
+</head>
+<body>
+    <div class="chat-app">
+        <header class="header">
+            <img src="/front-end/images/fontys-logo.png" alt="Aristoteles AI" class="nav-logo">
+            <h1>Aristotle AI</h1>
+        </header>
+        <a href="/front-end/student/ai-tutor-choose/ai-tut-choose.html" class="logout-button" title="Log uit">
+            <img src="/front-end/images/back.png" alt="Log uit">
+        </a>
+
+        <main class="chat-main">
+            <div class="message-container" id="message-container">
+                <div class="typing-indicator" id="typing-indicator">
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                    <span class="typing-dot"></span>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Typ je bericht hier..." rows="1"></textarea>
+                <button id="send-button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <!--Marked package to format text-->
+    <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/lib/marked.umd.min.js"></script>
+    <!--Dompurify package to sanitize-->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+    <script src="/front-end/student/chat/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5; 
+}
+
+/* Navbar styling */
+.header {
+    background-color: #c4a1dd; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 90px; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 71px; 
+    margin-right: 10px;
+}
+
+.header-center {
+    text-align: center;
+    
+}
+
+.header-center h1 {
+    margin: 2;
+    font-size: 24px;
+    color: #333; 
+    transform: translate(-32%, -32%);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+.logout-button img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Tools grid  */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto; 
+    background-color: transparent; 
+}
+
+/* Tool cards */
+.tool-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid transparent; 
+    border-left: 5px solid transparent; 
+}
+
+/* Gekleurde randen voor de kaarten */
+.purple-border {
+    border-left-color: #7e57c2;
+    border-top-color: #7e57c2;
+}
+
+.blue-border {
+    border-left-color: #42a5f5;
+    border-top-color: #42a5f5;
+}
+
+.peach-border {
+    border-left-color: #ffccbc;
+    border-top-color: #ffccbc;
+}
+
+.green-border {
+    border-left-color: #66bb6a;
+    border-top-color: #66bb6a;
+}
+
+.orange-border {
+    border-left-color: #ffa726;
+    border-top-color: #ffa726;
+}
+
+/* Icon wrappers */
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+/* Icon achtergrondkleuren */
+.purple-border .icon-wrapper {
+    background-color: #b39ddb;
+}
+
+.blue-border .icon-wrapper {
+    background-color: #90caf9;
+}
+
+.peach-border .icon-wrapper {
+    background-color: #ffccbc;
+}
+
+.green-border .icon-wrapper {
+    background-color: #c5e1a5;
+}
+
+.orange-border .icon-wrapper {
+    background-color: #ffcc80;
+}
+
+.icon-img {
+    width: 32px;
+    height: 32px;
+}
+
+.tool-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.tool-card-link:hover .tool-card {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}

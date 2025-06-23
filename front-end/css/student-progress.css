@@ -1,0 +1,404 @@
+:root {
+    /* Color Palette */
+    --primary: #6a0dad;
+    --primary-light: #9c27b0;
+    --primary-dark: #4a148c;
+    --primary-pale: #c4a1dd;
+    --secondary: #f3e5f5;
+    --text: #333333;
+    --text-light: #666666;
+    --text-on-primary: #ffffff;
+    --success: #4caf50;
+    --warning: #ff9800;
+    --danger: #f44336;
+    --border: #e0e0e0;
+    --good: #4caf50;
+    --average: #ff9800;
+    --needs-improvement: #f44336;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: var(--text);
+}
+
+/* Header Styles */
+.header {
+    background-color: var(--primary-pale);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: var(--text);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-logo {
+    height: 70px;
+}
+
+.logout-button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logout-button img {
+    width: 32px;
+    height: 32px;
+}
+
+.logout-button:hover {
+    opacity: 0.8;
+}
+
+.greeting {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* Student Info Section */
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.student-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.student-details {
+    line-height: 1.4;
+}
+
+.student-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.student-id {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+/* Main Dashboard Layout */
+.dashboard {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.progress-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Column Styles */
+.column {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.column-header {
+    background-color: #c4a1dd;
+    color: black;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.column-content {
+    padding: 20px;
+}
+
+/* Homework Grid */
+.homework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.homework-card {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.homework-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-light);
+}
+
+.homework-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-dark);
+    font-size: 1rem;
+}
+
+.homework-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+}
+
+.homework-due {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-light);
+}
+
+.homework-status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.status-complete {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--success);
+}
+
+.status-inprogress {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: #f44336;
+}
+.status-Done {
+    background-color: rgba(5, 93, 28, 0.895);
+    color: #e3dcdc;
+}
+.status-notstarted {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--danger);
+}
+
+.homework-proficiency {
+    margin-top: 10px;
+    font-size: 0.875rem;
+}
+
+.proficiency-label {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.proficiency-good {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--good);
+}
+
+.proficiency-average {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: var(--average);
+}
+
+.proficiency-needs-improvement {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: var(--needs-improvement);
+}
+
+/* Progress Circle */
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: var(--secondary);
+    stroke-width: 10;
+}
+
+.circle-progress {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 0, 100;
+    transition: stroke-dasharray 1s ease-in-out;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.circle-percent {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.circle-label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+}
+
+/* Progress Details */
+.progress-details {
+    margin-top: 20px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--border);
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
+.detail-value {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #c4a1dd;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header h1 {
+        position: static;
+        transform: none;
+        margin: 10px 0;
+        order: 2;
+    }
+
+    .logo-container {
+        width: 100%;
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .logout-button {
+        position: static;
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .progress-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .student-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.logout-button img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+.logout-button:hover img {
+  transform: scale(1.1);
+}
